@@ -78,6 +78,8 @@ function setup() {
   button.position(200,320);
   button.size(50,50);
 
+  button.mouseClicked(remove_rope)
+
   button2 = createImg('cut_btn.png');
   button2.position(30,420);
   button2.size(50,50);
@@ -143,6 +145,8 @@ function drop()
   con2.dettach();
   con2 = null; 
 }
+
+
 
 function remove_rope()
 {
